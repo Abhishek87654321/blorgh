@@ -1,0 +1,1 @@
+Rails.application.config.assets.precompile += %w([ blorgh/application.css blorgh/application.js]
