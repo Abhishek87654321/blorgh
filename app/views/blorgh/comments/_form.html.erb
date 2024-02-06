@@ -1,0 +1,11 @@
+# app/views/blorgh/comments/_form.html.erb
+# this file is partial , we can call it inside any view , to follow DRY princple
+
+<h3>New comment</h3>
+<%= form_with model: [@article, @article.comments.build] do |form| %>
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+  <%= form.submit %>
+<% end %>
